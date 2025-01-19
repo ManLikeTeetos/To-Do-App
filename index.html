@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>To-Do List App</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f4f4f9;
+			margin: 0;
+			padding: 20px;
+		}
+
+		h1 {
+			text-align: center;
+			color: #333;
+		}
+
+		.todo-container {
+			max-width: 400px;
+			margin: 0 auto;
+			background: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		}
+
+		.todo-form input {
+			width: 75%;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			margin-right: 10px;
+		}
+
+		.todo-form button {
+			padding: 10px 20px;
+			background-color: #28a745;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		.todo-list {
+			list-style-type: none;
+			padding: 0;
+		}
+
+		.todo-item {
+			display: flex;
+			justify-content: space-between;
+			background: #f9f9f9;
+			padding: 10px;
+			margin: 10px 0;
+			border-radius: 5px;
+			border: 1px solid #ddd;
+		}
+
+		.todo-item.completed {
+			text-decoration: line-through;
+			color: green;
+		}
+
+		.todo-item button {
+			background-color: #dc3545;
+			color: white;
+			border: none;
+			padding: 5px 10px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>To-Do List</h1>
+	<div class="todo-container">
+		<form class="todo-form">
+			<input type="text" id="taskInput" placeholder="Add a new task..." />
+			<button type="submit">Add</button>
+		</form>
+		<ul class="todo-list" id="todoList"></ul>
+	</div>
+	<script src="app.js"></script>
+</body>
+
+</html>
